@@ -8,12 +8,11 @@ return(z);
 main()
 {
 int a,b,c,d,e;
-printf("Please enter the number of A-E files: ");
-scanf("%d,%d,%d,%d,%d",&a,&b,&c,&d,&e);
-c=file(e,d);
-//b=file(c,b);
-//a=file(b,a);
-printf("%d,%d,%d,%d,%d",a,b,c,d,e);
+a=1;b=0;c=2;d=3;e=2;
+c=file(d+e,c);
+b=file(c,b);
+a=file(b,a);
+printf("The file is:A=%d,B=%d,C=%d,D=%d,E=%d",a,b,c,d,e);
 
 getchar();
 
