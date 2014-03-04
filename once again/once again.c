@@ -6,20 +6,20 @@ main()
 	float y;
 	float z=0;
 	printf("please input number:");
-	scanf("%f",&x);	//键入X的值
+	scanf("%f",&x);	//enter x
 if(x==1)
 {
-	y=x;   			//避免是X=0的情况
+	y=x;   			//advoid x=0
 }
 	else
-for(i=2;i<=x;x--)	//控制循环的次数，
+for(i=2;i<=x;x--)	//control times
 {
 	y=1/x+1/(x-1);
 	x=x-1;
 	z=z+y;
 }
-	printf("%f",z);  //用Z输出累加
+	printf("%f",z);  //sum Z
 
 
-getchar()；				//停住cmd
+getchar()；				//stop cmd
 }
