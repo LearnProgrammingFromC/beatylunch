@@ -9,7 +9,7 @@ main()
 	scanf("%f",&x);	//enter x
 if(x==1)
 {
-	y=x;   			//advoid x=0
+	z=x;   			//advoid x=0
 }
 	else
 for(i=2;i<=x;x--)	//control times
@@ -21,5 +21,5 @@ for(i=2;i<=x;x--)	//control times
 	printf("%f",z);  //sum Z
 
 
-getchar()£»				//stop cmd
+getchar();			//stop cmd
 }
