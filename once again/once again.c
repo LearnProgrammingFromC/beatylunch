@@ -1,25 +1,35 @@
 #include <stdio.h>
 main()
-{
-	int i;
-	float x;
-	float y;
+{   int x;
+	float i;
 	float z=0;
 	printf("please input number:");
-	scanf("%f",&x);	//enter x
-if(x==1)
+	scanf("%d",&x);	  //enter x
+if(x==0)  //when x=0
+	{
+	printf("Please enter anther number");
+	}
+else
 {
-	z=x;   			//advoid x=0
-}
+	if(x>0)  //when x>0
+	{
+		for(i=1;i<=x;i++)
+		{
+		z=z+1/i;
+		}
+	}
 	else
-for(i=2;i<=x;x--)	//control times
-{
-	y=1/x+1/(x-1);
-	x=x-1;
-	z=z+y;
+	{
+	if(x<0)  //When x<0
+	{
+		for(i=-1;i>=x;i--)
+		{
+		z=z+1/i;
+		}
+	}
+	}
 }
-	printf("%f",z);  //sum Z
+printf("%f",z);  //sum Z
 
-
-getchar();			//stop cmd
+		//stop cmd
 }
